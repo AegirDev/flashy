@@ -155,7 +155,7 @@ export default class Index extends Component {
                 <Card.Text className="cardBody">
                 <hr className="whiteHRLINE" />
                 <p className="cardFontMain">
-                "What started as a currency that enabled traceless transactions is now growing into an ever-expanding ecosystem of privacy tools. 
+                What started as a currency that enabled traceless transactions is now growing into an ever-expanding ecosystem of privacy tools. 
                 </p>
                 </Card.Text>
                 <hr className="whiteHRLINE" />
