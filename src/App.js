@@ -263,7 +263,7 @@ export default class Index extends Component {
                 </p>
                 </Card.Text>
                 <hr className="whiteHRLINE" />
-                <AwesomeButton type="primary" href="http://buccv2.web.app/" className="special">Sargasso</AwesomeButton>
+                <AwesomeButton type="primary" href="https://sargasso.web.app/" className="special">Sargasso</AwesomeButton>
               </Card.Body>
             </Card>
         </Col>
@@ -309,7 +309,7 @@ export default class Index extends Component {
                 </p>
                 </Card.Text>
                 <hr className="whiteHRLINE" />
-                <AwesomeButton type="primary" href="http://buccv2.web.app/" className="special">Havoc</AwesomeButton>
+                <AwesomeButton type="primary" href="https://sargasso.web.app/" className="special">Havoc</AwesomeButton>
               </Card.Body>
             </Card>
         </Col>
