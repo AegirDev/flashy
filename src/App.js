@@ -103,7 +103,7 @@ export default class Index extends Component {
             <a href="https://ipfs.io/ipfs/QmUDSvUDtw1DUvjHbnU18Q8n4nSNo41VAYNM1goE4xE2jP" target="_blank"><Button className="buttonFormat" theme={preset} variant='outline'>WP</Button></a>
             </Col>
             <Col>
-            <a href="https://buccfarm.eth" target="_blank"><Button className="buttonFormat" theme={preset} variant='outline'>API</Button></a>
+            <a href="https://buccapi.eth/" target="_blank"><Button className="buttonFormat" theme={preset} variant='outline'>API</Button></a>
             </Col>
             <Col>
             <a href="https://sargasso.web.app/" target="_blank"><Button className="buttonFormat extendFarmButton" theme={preset} variant='outline'>Sargasso</Button></a>
