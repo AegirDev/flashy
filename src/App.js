@@ -5,12 +5,17 @@ import './App.css';
 //import './main.scss';
 import './loader.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { AwesomeButton } from "react-awesome-button";
-import "react-awesome-button/dist/styles.css";
 
 //General Style Imports
 import twitter from './twitterLogo.png';
 import telegram from './telegramLogo.png';
+
+//Rebass
+import {
+  Button,
+  Text
+} from 'rebass';
+import preset from '@rebass/preset';
 
 /* ELEMENTS IMPORTS */
 import buccLogo from './logo.svg';
@@ -28,7 +33,6 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Card from 'react-bootstrap/Card';
-import Button from 'react-bootstrap/Button';
 
 export default class Index extends Component {
   constructor(props) {
@@ -87,29 +91,33 @@ export default class Index extends Component {
       )}
     </Suspense>
 
-    
-    <Container fluid className={this.state.bodyLoaderCSS}>
-      <Row>
-      <Col md={12}>
-      <Container>
-          <Navbar className="justify-content-between" bg="blackbg">
-          <Form>
-          <Navbar.Brand href="#home">
-          <Container>
-                        
-          </Container>
-          </Navbar.Brand>
-          </Form>
-          <Form>
-          <Container>
+    <Navbar className="text-center">
+        <Navbar.Brand href="#home">
+        </Navbar.Brand>
+        <Container>
+          <Row>
+            <Col>
+            <a href="https://buccaneer.eth" target="_blank"><Button className="buttonFormat" theme={preset} variant='outline'>Homepage</Button></a>
+            </Col> 
+            <Col>
+            <a href="https://ipfs.io/ipfs/QmUDSvUDtw1DUvjHbnU18Q8n4nSNo41VAYNM1goE4xE2jP" target="_blank"><Button className="buttonFormat" theme={preset} variant='outline'>WP</Button></a>
+            </Col>
+            <Col>
+            <a href="https://buccfarm.eth" target="_blank"><Button className="buttonFormat" theme={preset} variant='outline'>API</Button></a>
+            </Col>
+            <Col>
+            <a href="https://sargasso.web.app/" target="_blank"><Button className="buttonFormat extendFarmButton" theme={preset} variant='outline'>Sargasso</Button></a>
+            </Col>
+          </Row>
+        </Container> 
+        <Navbar.Collapse className="justify-content-end">
           <a href="https://t.me/BuccaneerV2"><img src={telegram} className="shareButtonSpacing" /></a>
           <a href="https://twitter.com/BuccaneerV2"><img src={twitter} className="shareButtonSpacing" /></a>
-          </Container>
-          </Form>
-          </Navbar>
-          </Container>
-      </Col>
-      </Row>
+        </Navbar.Collapse>
+        </Navbar>
+
+    
+    <Container fluid className={this.state.bodyLoaderCSS}>
       
       <Row className="topviewSpace">
       <Col md={2}>
@@ -121,11 +129,11 @@ export default class Index extends Component {
       className="imageSize" />
       </Col>
       <Col md={4}>
-      <Container>
+      <Container className="text-center">
       <Row>
           <Col>
-          <div class="loading-text HeadlineAdjustment">
-          <span class="loading-text-words Headline">
+          <div class="HeadlineAdjustment">
+          <span class="Headline">
           BUCCANEER
           </span>
           </div>
@@ -133,8 +141,8 @@ export default class Index extends Component {
         </Row>
         <Row>
           <Col>
-          <div class="loading-text SubtitleAdjustment">
-          <span class="loading-text-words Subtitle">
+          <div class="SubtitleAdjustment">
+          <span class="Subtitle">
           Welcome to Privacy
           </span>
           </div>
@@ -156,6 +164,9 @@ export default class Index extends Component {
                 <hr className="whiteHRLINE" />
                 <p className="cardFontMain">
                 What started as a currency that enabled traceless transactions is now growing into an ever-expanding ecosystem of privacy tools. 
+                With Buccaneer V2, you can transact privately, gain interest on your bucc holdings and privately tumble ether and erc20 tokens. Soon, 
+                you'll be able to transact all assets privately and disclose balances on a voluntary basis. Bringing privacy to ethereum and the larger 
+                cryptocurrency sphere is Buccaneer, the number one privacy asset in the world. 
                 </p>
                 </Card.Text>
                 <hr className="whiteHRLINE" />
@@ -172,7 +183,7 @@ export default class Index extends Component {
       </Col>
       <Col>
       <Card variant="dark" bg="blackbg" className="text-center adjustCardBody">
-              <Card.Header className="cardFont cardTitle cardFontMain">BUCC</Card.Header>
+              <Card.Header className="cardFont cardTitle cardFontMain">Infinite Privacy</Card.Header>
       </Card>
       </Col>
       <Col md={3}>
@@ -199,7 +210,11 @@ export default class Index extends Component {
                 <Card.Title className="cardFont cardSubtitle cardFontMain"></Card.Title>
                 <Card.Text className="cardBody">
                 <hr className="whiteHRLINE" />
-                <p className="cardFontMain paragraphBody">Ethereum's first and only on-chain privacy currency. Unstoppable, immutable. Read more about BUCC and how to use it's companion serverless API Bermuda for untraceable transactions here in the Whitepaper-Manual. 
+                <p className="cardFontMain paragraphBody">Ethereum's first and only on-chain privacy currency, Buccaneer V2 is unstoppable and immutable because it constantly changes. 
+                Further transactions obfuscate data and the more wallets that interact with native BUCC contract, the harder it becomes to track anyone. Since all information is internal, 
+                private and hidden it quickly becomes impossible to track users as data is always changing. Welcome to infinite privacy, the more transactions that happen in BUCC after you 
+                interact with it, the safer and safer you become. To properly experience the full level of privacy offered by BUCC, you can use <a href="https://buccapi.eth/">Bermuda</a>, a static and serverless API that allows for 
+                quick and easy use for discreet transactions. 
                 </p>
                 </Card.Text>
                 <hr className="whiteHRLINE" />
@@ -208,13 +223,10 @@ export default class Index extends Component {
                   <Col md={3}>
                   </Col>
                   <Col>
-                  <AwesomeButton type="primary" href="https://info.uniswap.org/pair/0x7772612549f27aa49c83fa59ab726f4799e4ecdc" className="special">Uniswap</AwesomeButton>                  
                   </Col>
                   <Col>
-                  <AwesomeButton type="primary" href="https://ipfs.io/ipfs/QmQfDJCw6X2cvgaA3sB3YnyJrjLSgJb1N5xzzC8iszr7Tw" className="special">White Paper</AwesomeButton>
                   </Col>
                   <Col>
-                  <AwesomeButton type="primary" href="https://buccaneerv2.web.app/" className="special">Bermuda</AwesomeButton>
                   </Col>
                   <Col md={3}>
                   </Col>
@@ -231,7 +243,7 @@ export default class Index extends Component {
       </Col>
       <Col>
       <Card variant="dark" bg="blackbg" className="text-center adjustCardBody">
-              <Card.Header className="cardFont cardTitle cardFontMain">SARGASSO</Card.Header>
+              <Card.Header className="cardFont cardTitle cardFontMain">Traceless</Card.Header>
       </Card>
       </Col>
       <Col md={3}>
@@ -259,11 +271,15 @@ export default class Index extends Component {
                 <Card.Text className="cardBody">
                 <hr className="whiteHRLINE" />
                 <p className="cardFontMain paragraphBody">
-                The world's first private farm. Designed and intended for the stable distribution of BUCC, Sargasso's activity, deposits and withdraws are completely private. Detailed manual coming soon. Fully functional now. 
+                Besides have ever-evolving data within the contract, BUCC also overwrites and shreds data. This makes it impossible to pick up any trail and this is also true of all privacy related projects 
+                that are built off of BUCC. All of them rapidly delete any useful history within the contract, so even querying for it after the fact becomes impossible. Critics have said that all Ethereum 
+                transactions have full details disclosed within them and this is true, but they fail to account that every transaction can carry unique data native to a contract and when the aftermath is shredded, it becomes 
+                impossible to find out what someone did. You may be able to find out who sent what into something with BUCC, but you'll find what they did with it. That's because BUCC burns everything. 
+                The perfect example is <a href="http://sargasso.web.app/">Sargasso</a>, which is a private farm. Upon being able to claim your farm rewards, you can privately claim it to any address whitelisted within BUCC, without any trace of the 
+                rewards being claimed. More updates are coming to Sargasso soon.
                 </p>
                 </Card.Text>
                 <hr className="whiteHRLINE" />
-                <AwesomeButton type="primary" href="https://sargasso.web.app/" className="special">Sargasso</AwesomeButton>
               </Card.Body>
             </Card>
         </Col>
@@ -278,7 +294,7 @@ export default class Index extends Component {
       </Col>
       <Col>
       <Card variant="dark" bg="blackbg" className="text-center adjustCardBody">
-              <Card.Header className="cardFont cardTitle cardFontMain">HAVOC</Card.Header>
+              <Card.Header className="cardFont cardTitle cardFontMain">Multi-Dimensional</Card.Header>
       </Card>
       </Col>
       <Col md={3}>
@@ -305,30 +321,26 @@ export default class Index extends Component {
                 <Card.Title className="cardFont cardSubtitle cardFontMain"></Card.Title>
                 <hr className="whiteHRLINE" />
                 <Card.Text className="cardBody">
-                <p className="cardFontMain paragraphBody">The world's first unstoppable ETH and ERC20 tumbler. Built on-chain with no auxiliary components, Havok wreaks it. Detailed manual coming soon. Fully functional now. 
+                <p className="cardFontMain paragraphBody">
+                Our world is multi-dimensional and our data can be too. The strongest aspect to BUCC is that is built on Ethereum, a chain 
+                with a secure hashrate and a proven track record. This means there can never be a 51% attack against BUCC's chain, the nodes 
+                can never be shut down through government scrutiny and BUCC can always be freely transacted through DEXs. But the real strength 
+                lies in the ever expanding monopoly of privacy projects related to BUCC. BUCC is far from just a token or even a private contract, 
+                it's a set piece in the entire private cryptocurrency industry, an entire conglomerate of privacy related projects that will continue 
+                to expand and continue to make BUCC safer, more secure and in general the entire cryptocurrency commuity better off. To showcase this, 
+                a new tumbler named <a href="http://sargasso.web.app/">Havoc</a> was released for which anyone can use for the monthly subscription cost of just one BUCC per month. This tumbler allows the 
+                tumbling of ether and for the tumbling of any ERC20 into the contract. It works through the use of a third wallet as a key and since BUCC 
+                has it's own private address randomizer, you can rest assured you are using the best tumbler out there in terms of security, privacy and 
+                definitely cost. 
                 </p>
                 </Card.Text>
                 <hr className="whiteHRLINE" />
-                <AwesomeButton type="primary" href="https://sargasso.web.app/" className="special">Havoc</AwesomeButton>
               </Card.Body>
             </Card>
         </Col>
         <Col md={2}></Col>
       </Row>
 
-      <Row>
-      <Col md={2}></Col>
-        <Col md={8}>
-            <Card variant="dark" bg="blackbg" className="text-center marginTop lastCard">
-              <Card.Body className="adjustCardBody">
-                <p className="cardFontMain paragraphBody">
-                Site under construction. Even more, coming soon.
-                </p>
-              </Card.Body>
-            </Card>
-        </Col>
-        <Col md={2}></Col>
-      </Row>
     </Container>
     </>
   );

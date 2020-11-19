@@ -29,8 +29,6 @@ margin-bottom: 5vw;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         background-size: 300%;
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
         transition: 3s;
         animation: font-shine 3s infinite linear;
 }
@@ -48,6 +46,7 @@ margin-top: 2vw;
 font-size: 5vw !important;
 background-color: #000000 !important;
 z-index: 50 !important;
+
 }
 
 .cardSubtitle {
@@ -63,13 +62,26 @@ font-size: 1.4vw !important;
   margin-bottom: 15vw !important;
 }
 
+.buttonFormat {
+        border: none !important;
+        outline:none !important;
+}
+
+.buttonFormat:hover {
+        color: green;
+        cursor: pointer;
+}
+
+.extendFarmButton {
+        width: 120% !important;
+}
+
 
 .cardBody {
 color: #C0C0C0;
 background-size: 300%;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
- 
 }
 
 .limitHeightVideo {
@@ -136,14 +148,24 @@ background-size: 300%;
         font-size: 5vw !important;
         letter-spacing: .3vw;
         text-align: center;
-        color: #C0C0C0;
+        background: -webkit-linear-gradient(left, #C0C0C0 0%,#D3D3D3 24%,#D3D3D3 36%,#C0C0C0 46%,#C0C0C0 52%,#C0C0C0 58%,#C0C0C0 67%,#000000 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-size: 300%;
+        transition: 15s;
+        animation: font-shine 15s infinite linear;
     }
 
     .Subtitle {
         font-size: 1.75vw !important;
         letter-spacing: .2vw;
         text-align: center;
-        color: #C0C0C0;
+        background: -webkit-linear-gradient(left, #C0C0C0 0%,#D3D3D3 24%,#D3D3D3 36%,#C0C0C0 46%,#C0C0C0 52%,#C0C0C0 58%,#C0C0C0 67%,#000000 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-size: 300%;
+        transition: 15s;
+        animation: font-shine 15s infinite linear;
     }
 
     .HeadlineAdjustment {
@@ -544,6 +566,11 @@ background-size: 300%;
                 font-size: 4vw !important;
         }
 
+        .shareButtonSpacing {
+                margin-top: 30vw !important;
+                margin-right: 5vw !important;
+        }
+
         .mobileAdjustCube {
                 margin-top: 0vh !important;
         }
@@ -601,6 +628,15 @@ background-size: 300%;
 
         .cardSubtitle {
                 font-size: 4vw !important;
+        }
+
+        .shareButtonSpacing {
+                margin-top: 30vw !important;
+                margin-right: 5vw !important;
+        }
+
+        .buttonFormat {
+                width: 120% !important;
         }
 
         .mobileAdjustCube {
@@ -665,6 +701,14 @@ background-size: 300%;
                 margin-top: 3vw !important;
         }
 
+        .shareButtonSpacing {
+                margin-top: 45vw !important;
+                margin-right: 5vw !important;
+        }
+
+        .buttonFormat {
+                width: 120% !important;
+        }
 
         .paragraphBody {
                 font-size: 2.5vw !important;
@@ -708,6 +752,15 @@ background-size: 300%;
 }
 
 @media screen and (min-width: 310px) and (max-width: 369px) {
+        .shareButtonSpacing {
+                margin-top: 40vw !important;
+                margin-right: 5vw !important;
+        }
+
+        .buttonFormat {
+                width: 120% !important;
+        }
+
         .paragraphBody {
                 font-size: 2.5vw !important;
         }
@@ -765,6 +818,15 @@ background-size: 300%;
 }
 
 @media screen and (min-width: 260px) and (max-width: 309px) {
+        .shareButtonSpacing {
+                margin-top: 55vw !important;
+                margin-right: 5vw !important;
+        }
+
+        .buttonFormat {
+                width: 120% !important;
+        }
+
         .paragraphBody {
                 font-size: 3vw !important;
         }
@@ -817,23 +879,6 @@ background-size: 300%;
         }
 }
 
-
-.special {
-        --button-default-height: 54px;
-        --button-default-font-size: 15px;
-        --button-default-border-radius: 6px;
-        --button-horizontal-padding: 20px;
-        --button-raise-level: 5px;
-        --button-hover-pressure: 2;
-        --transform-speed: 0.185s;
-        --button-primary-color: #3b3b3b;
-        --button-primary-color-dark: #242323;
-        --button-primary-color-light: #d4d9e4;
-        --button-primary-color-hover: #7d7d7d;
-        --button-primary-border: none;
-        }
-
 a {
-        color: #FFFFFF;
         text-decoration: none !important;
 }
