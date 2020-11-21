@@ -94,7 +94,7 @@ export default class Index extends Component {
     <Navbar className="text-center">
         <Navbar.Brand href="#home">
         </Navbar.Brand>
-        <Container>
+        <Container className="text-center">
           <Row>
             <Col>
             <a href="https://buccaneer.eth" target="_blank"><Button className="buttonFormat" theme={preset} variant='outline'>Homepage</Button></a>
@@ -106,7 +106,10 @@ export default class Index extends Component {
             <a href="https://buccapi.eth/" target="_blank"><Button className="buttonFormat" theme={preset} variant='outline'>API</Button></a>
             </Col>
             <Col>
-            <a href="https://sargasso.web.app/" target="_blank"><Button className="buttonFormat extendFarmButton" theme={preset} variant='outline'>Sargasso</Button></a>
+            <a href="https://buccfarm.eth/" target="_blank"><Button className="buttonFormat" theme={preset} variant='outline'>Sargasso</Button></a>
+            </Col>
+            <Col>
+            <a href="https://sargasso.web.app/" target="_blank"><Button className="buttonFormat" theme={preset} variant='outline'>Havok</Button></a>
             </Col>
           </Row>
         </Container> 
@@ -162,12 +165,15 @@ export default class Index extends Component {
       <Card.Body className="adjustCardBody">
                 <Card.Text className="cardBody">
                 <hr className="whiteHRLINE" />
-                <p className="cardFontMain">
+                <Text
+                  fontSize={[ 2 ]}
+                  color='primary'
+                  className="text">
                 What started as a currency that enabled traceless transactions is now growing into an ever-expanding ecosystem of privacy tools. 
                 With Buccaneer V2, you can transact privately, gain interest on your bucc holdings and privately tumble ether and erc20 tokens. Soon, 
                 you'll be able to transact all assets privately and disclose balances on a voluntary basis. Bringing privacy to ethereum and the larger 
                 cryptocurrency sphere is Buccaneer, the number one privacy asset in the world. 
-                </p>
+                </Text>
                 </Card.Text>
                 <hr className="whiteHRLINE" />
               </Card.Body>
@@ -208,17 +214,19 @@ export default class Index extends Component {
         <Card variant="dark" bg="blackbg" className="text-center">
               <Card.Body className="adjustCardBody">
                 <Card.Title className="cardFont cardSubtitle cardFontMain"></Card.Title>
-                <Card.Text className="cardBody">
                 <hr className="whiteHRLINE" />
-                <p className="cardFontMain paragraphBody">Ethereum's first and only on-chain privacy currency, Buccaneer V2 is an unstoppable and immutable privacy token that allows you to 
+                <Text
+                  fontSize={[ 2 ]}
+                  color='primary'
+                  className="text">
+                Ethereum's first and only on-chain privacy currency, Buccaneer V2 is an unstoppable and immutable privacy token that allows you to 
                 send value on the Ethereum blockchain safely and with peace of mind. Bucc works because
                 further transactions obfuscate data internaly and thus, the more wallets that interact with the native BUCC contract, the harder it becomes to track anyone. Since all information is internal, 
                 private and hidden, it quickly becomes impossible to track users as data is always changing. The cost of merely tracking one user would involve advanced machine learning, 
                 a full list of users interacting with BUCC and going through an assortment of records... all for one user. The idea of all for one and one for all applies to BUCC, it's other users change data and 
                 shield you within the network. That's the idea of infinite privacy, the more transactions that happen in BUCC, the safer you are. To properly experience the full level of privacy offered by BUCC, you can use <a href="https://buccapi.eth/">Bermuda</a>, a static and serverless API that allows for the 
                 quick and easy transfer of BUCC. 
-                </p>
-                </Card.Text>
+                </Text>
                 <hr className="whiteHRLINE" />
                 <Container>
                   <Row>
@@ -270,17 +278,18 @@ export default class Index extends Component {
         <Card variant="dark" bg="blackbg" className="text-center adjustcardborder">
               <Card.Body className="adjustCardBody">
                 <Card.Title className="cardFont cardSubtitle cardFontMain"></Card.Title>
-                <Card.Text className="cardBody">
                 <hr className="whiteHRLINE" />
-                <p className="cardFontMain paragraphBody">
+                <Text
+                  fontSize={[ 2 ]}
+                  color='primary'
+                  className="text">
                 Besides having ever-evolving data within the contract, BUCC also overwrites and shreds data. This makes it impossible to pick up any trail and this is also true of all privacy related projects 
                 that are built off of BUCC. All of them rapidly delete any useful history within the contract, so even querying for it, after the fact becomes impossible. Critics say that all Ethereum 
                 transactions have full details disclosed within them and while this is true, they fail to account that every transaction can carry it's own unique payload that can be burned. This is why it is
                 impossible to track BUCC. You may be able to find out who did an action with BUCC, but you'll find what they sent or to whom. That's because BUCC burns everything. 
-                The perfect example is <a href="http://sargasso.web.app/">Sargasso</a>, which is a private farm. Upon being able to claim your farm rewards, you can privately claim it to any address whitelisted within BUCC, without any trace of the 
+                The perfect example is <a href="https://buccfarm.eth/">Sargasso</a>, which is a private farm. Upon being able to claim your farm rewards, you can privately claim it to any address whitelisted within BUCC, without any trace of the 
                 rewards being claimed. More updates are coming to Sargasso soon.
-                </p>
-                </Card.Text>
+                </Text>
                 <hr className="whiteHRLINE" />
               </Card.Body>
             </Card>
@@ -322,8 +331,10 @@ export default class Index extends Component {
               <Card.Body className="adjustCardBody">
                 <Card.Title className="cardFont cardSubtitle cardFontMain"></Card.Title>
                 <hr className="whiteHRLINE" />
-                <Card.Text className="cardBody">
-                <p className="cardFontMain paragraphBody">
+                <Text
+                  fontSize={[ 2 ]}
+                  color='primary'
+                  className="text">
                 Our world is a multi-dimensional one and our data can be too. The strongest aspect to BUCC is that is built on Ethereum, a chain 
                 with a secure hashrate and a proven track record. This means there can never be a 51% attack against BUCC's chain, the nodes 
                 can never be shut down through government scrutiny and BUCC can always be freely transacted through DEXs. But the real strength 
@@ -333,9 +344,8 @@ export default class Index extends Component {
                 a new tumbler named <a href="http://sargasso.web.app/">Havoc</a>, was released for which anyone can use for the monthly subscription cost of just one BUCC per month. This tumbler allows the 
                 tumbling of ether, and for the tumbling of any ERC20 tokens on Ethereum. It's secret recipe is the use of a third wallet as a key and since BUCC 
                 has it's own private address randomizer, you can rest assured you are using the best tumbler out there in terms of security, privacy and 
-                definitely cost. 
-                </p>
-                </Card.Text>
+                definitely cost.
+                </Text>
                 <hr className="whiteHRLINE" />
               </Card.Body>
             </Card>

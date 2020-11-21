@@ -65,23 +65,18 @@ font-size: 1.4vw !important;
 .buttonFormat {
         border: none !important;
         outline:none !important;
+        margin-bottom: 5vw !important;
 }
 
-.buttonFormat:hover {
+a:hover {
         color: green;
         cursor: pointer;
 }
 
-.extendFarmButton {
-        width: 120% !important;
-}
 
-
-.cardBody {
-color: #C0C0C0;
-background-size: 300%;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+.buttonFormat:hover {
+        color: green;
+        cursor: pointer;
 }
 
 .limitHeightVideo {
@@ -111,10 +106,6 @@ background-size: 300%;
         margin-top: -12vh !important;
 }
 
-.paragraphBody {
-        font-size: 1.1vw !important;
-}
-
 .cardFontMain {
         text-align: center;
         background: -webkit-linear-gradient(left, #C0C0C0 0%,#e5e5e5 24%,#D3D3D3 36%,#C0C0C0 46%,#C0C0C0 52%,#C0C0C0 58%,#cccccc 67%,#D3D3D3 100%);
@@ -131,8 +122,12 @@ background-size: 300%;
     100% {background-position: -100% 0}
   }
 
+/* TEXT RELATED ISSUES */
+.text {
+        color: #C0C0C0 !important;
+        font-family: 'Noto Sans', sans-serif !important;
+      }
 
-/* MAIN DISPLAY */
 
 /* FRONT TEXT DISPLAY */
 
@@ -184,10 +179,6 @@ background-size: 300%;
 
 
   @media screen and (min-width: 3500px) and (max-width: 5400px) {
-        .paragraphBody {
-                font-size: .7vw !important;
-        }
-
         .cardSubtitle {
                 font-size: 1.3vw !important;
         }
@@ -219,10 +210,6 @@ background-size: 300%;
 }
 
 @media screen and (min-width: 3001px) and (max-width: 3499px) {
-        .paragraphBody {
-                font-size: .9vw !important;
-        }
-
         .cardSubtitle {
                 font-size: 1.8vw !important;
         }
@@ -254,9 +241,6 @@ background-size: 300%;
 }
 
   @media screen and (min-width: 2601px) and (max-width: 3000px) {
-        .paragraphBody {
-                font-size: .9vw !important;
-        }
 
         .cardSubtitle {
                 font-size: 1.8vw !important;
@@ -341,10 +325,6 @@ background-size: 300%;
 }
 
   @media screen and (min-width: 1501px) and (max-width: 1800px) {
-        .paragraphBody {
-                font-size: 1.3vw !important;
-        }
-
         .cardSubtitle {
                 font-size: 2vw !important;
         }
@@ -635,10 +615,6 @@ background-size: 300%;
                 margin-right: 5vw !important;
         }
 
-        .buttonFormat {
-                width: 120% !important;
-        }
-
         .mobileAdjustCube {
                 margin-top: 0vw !important;
         }
@@ -706,10 +682,6 @@ background-size: 300%;
                 margin-right: 5vw !important;
         }
 
-        .buttonFormat {
-                width: 120% !important;
-        }
-
         .paragraphBody {
                 font-size: 2.5vw !important;
         }
@@ -757,9 +729,6 @@ background-size: 300%;
                 margin-right: 5vw !important;
         }
 
-        .buttonFormat {
-                width: 120% !important;
-        }
 
         .paragraphBody {
                 font-size: 2.5vw !important;
@@ -819,12 +788,10 @@ background-size: 300%;
 
 @media screen and (min-width: 260px) and (max-width: 309px) {
         .shareButtonSpacing {
-                margin-top: 55vw !important;
+                margin-top: 100vw !important;
                 margin-right: 5vw !important;
-        }
-
-        .buttonFormat {
-                width: 120% !important;
+                width: 5vw;
+                height: 5vw;
         }
 
         .paragraphBody {
@@ -840,18 +807,12 @@ background-size: 300%;
                 width: 35vw;
         }
 
-        .shareButtonSpacing {
-                width: 5vw;
-                height: 5vw;
-                margin-right: .5vw;
-        }
-
         .Headline {
                 font-size: 5vw !important;
                 margin-top: 2vw !important;
         }
         
-            .Subtitle {
+        .Subtitle {
                 font-size: 4vw !important;
                 margin-top: 3vw !important;
         }
