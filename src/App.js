@@ -109,7 +109,7 @@ export default class Index extends Component {
             <a href="https://buccfarm.eth/" target="_blank"><Button className="buttonFormat" theme={preset} variant='outline'>Sargasso</Button></a>
             </Col>
             <Col>
-            <a href="https://sargasso.web.app/" target="_blank"><Button className="buttonFormat" theme={preset} variant='outline'>Havok</Button></a>
+            <a href="https://bucctumbler.eth/" target="_blank"><Button className="buttonFormat" theme={preset} variant='outline'>Havok</Button></a>
             </Col>
           </Row>
         </Container> 
@@ -189,7 +189,7 @@ export default class Index extends Component {
       </Col>
       <Col>
       <Card variant="dark" bg="blackbg" className="text-center adjustCardBody">
-              <Card.Header className="cardFont cardTitle cardFontMain">Infinite Privacy</Card.Header>
+              <Card.Header className="cardFont cardTitle cardFontMain">Factorial Security</Card.Header>
       </Card>
       </Col>
       <Col md={3}>
@@ -219,13 +219,21 @@ export default class Index extends Component {
                   fontSize={[ 2 ]}
                   color='primary'
                   className="text">
-                Ethereum's first and only on-chain privacy currency, Buccaneer V2 is an unstoppable and immutable privacy token that allows you to 
-                send value on the Ethereum blockchain safely and with peace of mind. Bucc works because
-                further transactions obfuscate data internaly and thus, the more wallets that interact with the native BUCC contract, the harder it becomes to track anyone. Since all information is internal, 
-                private and hidden, it quickly becomes impossible to track users as data is always changing. The cost of merely tracking one user would involve advanced machine learning, 
-                a full list of users interacting with BUCC and going through an assortment of records... all for one user. The idea of all for one and one for all applies to BUCC, it's other users change data and 
-                shield you within the network. That's the idea of infinite privacy, the more transactions that happen in BUCC, the safer you are. To properly experience the full level of privacy offered by BUCC, you can use <a href="https://buccapi.eth/">Bermuda</a>, a static and serverless API that allows for the 
-                quick and easy transfer of BUCC. 
+                Ethereum's first and only on-chain privacy currency, Buccaneer V2 is an unstoppable protocol that gets stronger and stronger, the longer it's "chain" gets. 
+                Every transaction further complicates, twists and turns the ongoing chain and new transactions are appended to the end of the contract chain, like in other 
+                blockchains but with a twist. 
+                By interacting with BUCC, your future <a href="https://buccapi.eth/" target="_blank">Bermuda</a> transactions have a veil of stealth. The power 
+                of BUCC, is that all previous addresses that have interacted with the contract before are all the possibilities that you could have sent to. This 
+                is a factorial function, where the sum of all possibilities make the narrowing down of just one possibility, mathematically impossible. This is 
+                the same premise behind many major cryptocurrencies today and it's why most major coins work the way, they do today.  
+                <br />
+                <br />
+                This makes BUCC stronger than Monero or other competitors because Monero only offers a small ring infrastructure and a small realm of possiblities, 
+                whereas BUCC offers the whole realm of all previous contract interactors, making the factorial space or rather the tail end of the product significantly 
+                and increasingly larger. This means BUCC naturally gets stronger; the more you use it, the more addresses there are interacting with it and the interval 
+                of space in between your transactions. The more history there is, the more secure BUCC actually becomes, just as it is with many chains today. Further, it's 
+                on-chain presence means it is truly censorship resistant. To test it out, you can use <a href="https://buccapi.eth/" target="_blank">Bermuda</a>, which is the serverless 
+                API, directly linked to the BUCC contract that allows for quick and easy use to send BUCC privately.
                 </Text>
                 <hr className="whiteHRLINE" />
                 <Container>
@@ -253,7 +261,7 @@ export default class Index extends Component {
       </Col>
       <Col>
       <Card variant="dark" bg="blackbg" className="text-center adjustCardBody">
-              <Card.Header className="cardFont cardTitle cardFontMain">Traceless</Card.Header>
+              <Card.Header className="cardFont cardTitle cardFontMain">Overwriting</Card.Header>
       </Card>
       </Col>
       <Col md={3}>
@@ -283,12 +291,18 @@ export default class Index extends Component {
                   fontSize={[ 2 ]}
                   color='primary'
                   className="text">
-                Besides having ever-evolving data within the contract, BUCC also overwrites and shreds data. This makes it impossible to pick up any trail and this is also true of all privacy related projects 
-                that are built off of BUCC. All of them rapidly delete any useful history within the contract, so even querying for it, after the fact becomes impossible. Critics say that all Ethereum 
-                transactions have full details disclosed within them and while this is true, they fail to account that every transaction can carry it's own unique payload that can be burned. This is why it is
-                impossible to track BUCC. You may be able to find out who did an action with BUCC, but you'll find what they sent or to whom. That's because BUCC burns everything. 
-                The perfect example is <a href="https://buccfarm.eth/">Sargasso</a>, which is a private farm. Upon being able to claim your farm rewards, you can privately claim it to any address whitelisted within BUCC, without any trace of the 
-                rewards being claimed. More updates are coming to Sargasso soon.
+                Ethereum's greatest weakness is its bloat, which is why it allows data deletion and overwriting and it's precisely this weakness that BUCC ruthlessly exploits. 
+                Besides having ever-evolving data within the contract, BUCC and all BUCC products themselves also overwrite and shred data. This makes it impossible to pick up any trail as 
+                inputs are skewed and internal contract data is burned. All BUCC projects overwrite all data after every transaction, which true it does increase gas cost, 
+                but it is exactly this that makes it the highest quality of protection for the average user. Protection and security are what all of BUCC products aim to do 
+                and naturally removing traces on a public blockchain is difficult, but not impossible due to the overwriting nature of BUCC contracts. 
+                <br /><br />
+                BUCC's strength is the fact that additional contracts can be built and scaled out to its internal contract and in fact this could apply to almost anything, contract wise. So much so, that there 
+                is in fact a BUCC farm, to evenly distribute rewards for holders of the token. As well as fairly distributing, it also provides a liquidity shield to prevent panics but also to always offer 
+                transactional value in the token. All token fees on the network naturally go into the farm to always offer a steady supply for holders and ensure that there will always be a permanent liquidity base. 
+                If BUCC has any weakness, it could be said to be the liquidity aspect, never the contractual integrity or sophistication of the privacy protocol. The farm 
+                itself, <a href="https://buccfarm.eth/"  target="_blank">Sargasso</a> is actually a private farm and allows for private withdrawls of rewards to any address you choose. Tokens are 
+                locked into Sargasso and can only come out through mining; with the total token supply being shown as well as additional farmers, so you know you're never alone with BUCC.
                 </Text>
                 <hr className="whiteHRLINE" />
               </Card.Body>
@@ -305,7 +319,7 @@ export default class Index extends Component {
       </Col>
       <Col>
       <Card variant="dark" bg="blackbg" className="text-center adjustCardBody">
-              <Card.Header className="cardFont cardTitle cardFontMain">Multi-Dimensional</Card.Header>
+              <Card.Header className="cardFont cardTitle cardFontMain">The Swarm</Card.Header>
       </Card>
       </Col>
       <Col md={3}>
@@ -335,16 +349,15 @@ export default class Index extends Component {
                   fontSize={[ 2 ]}
                   color='primary'
                   className="text">
-                Our world is a multi-dimensional one and our data can be too. The strongest aspect to BUCC is that is built on Ethereum, a chain 
-                with a secure hashrate and a proven track record. This means there can never be a 51% attack against BUCC's chain, the nodes 
-                can never be shut down through government scrutiny and BUCC can always be freely transacted through DEXs. But the real strength 
-                lies in the ever expanding monopoly of privacy projects related to BUCC. BUCC is far from just a token or even a private contract, 
-                it's a set piece in the entire private cryptocurrency industry, an entire conglomerate of privacy related projects that will continue 
-                to expand and continue to make BUCC safer, more secure and in general the entire cryptocurrency commuity better off. To showcase this, 
-                a new tumbler named <a href="http://sargasso.web.app/">Havoc</a>, was released for which anyone can use for the monthly subscription cost of just one BUCC per month. This tumbler allows the 
-                tumbling of ether, and for the tumbling of any ERC20 tokens on Ethereum. It's secret recipe is the use of a third wallet as a key and since BUCC 
-                has it's own private address randomizer, you can rest assured you are using the best tumbler out there in terms of security, privacy and 
-                definitely cost.
+                BUCC can never be taken down. Its nodes are Ethereum's nodes. If it's exchanges blacklist it, another will accept it willingly or unwillingly, 
+                since it can live on any dex. It always gets continually stronger so it cannot be cracked. It can even meld with other contracts and other assets, 
+                protecting them against authoritarianism and corruption, acting as a shield for Ethereum. To prove so, the <a href="https://bucctumbler.eth/" target="_blank">BUCC tumbler</a> has been created, allowing the 
+                tumbling not just of Ethereum, but also of other ERC20 tokens and for significantly cheaper than any other tumbler. For just one BUCC a month, you can stay 
+                subscribed and even help the BUCC community, since all fees go to the BUCC farm. This is just one of the many projects that can expand off of BUCC itself. 
+                The tumbler uses BUCC's address scrambler and overwriting properties to shield the key and withdrawl addresses from chain analysis. 
+                Easy to use and completely secure, the BUCC tumbler, otherwise known as <a href="https://bucctumbler.eth/" target="_blank">Havok</a> has had 
+                its contract data opened for the community to see and trust and can be viewed <a href="https://etherscan.io/address/0x0ffaa8eeb2ee18c9174e4c5d6af6ce48199c6879" target="_blank">here</a>. 
+                Rest assured, when you're with BUCC, you are using the highest quality of privacy protection offered anywhere in the crypto world, period.
                 </Text>
                 <hr className="whiteHRLINE" />
               </Card.Body>
