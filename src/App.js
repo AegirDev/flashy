@@ -173,8 +173,7 @@ export default class Index extends Component {
                 you'll be able to transact Ether and tokens privately, as well as hide balances. The goal of Buccaneer V2 is to bring security to the Ethereum ecosphere and the larger 
                 cryptocurrency world as well. Buccaneer V2 aims to become the standard privacy protocol.
                 <br /><br />
-                The supply of BUCC is ten million, more can never be minted or burned. Currently 99.7% of the supply is locked and will remain locked until December 
-                30th. The token lock contract can be viewed <a href="https://etherscan.io/address/0xCEaC66ab21240FeD157391b2A792be37FbF5c6B9#code" target="_blank">here</a>. 
+                The supply of BUCC is ten million, more can never be minted or burned. Currently 99.7% of the supply is locked and will remain locked in rolling monthly contracts. 
                 Token locks will be implemented on a monthly basis, with supply, after monthly locks going into an OTC for liquidity and various farming pairs on different exchanges.
                 Liquidity is currently locked until October 4th of 2021.
                 </Text>
