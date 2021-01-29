@@ -1,0 +1,33 @@
+{
+  "files": {
+    "main.css": "./static/css/main.70a6af22.chunk.css",
+    "main.js": "./static/js/main.fadef719.chunk.js",
+    "main.js.map": "./static/js/main.fadef719.chunk.js.map",
+    "runtime-main.js": "./static/js/runtime-main.e74e4239.js",
+    "runtime-main.js.map": "./static/js/runtime-main.e74e4239.js.map",
+    "static/css/2.1a02f21c.chunk.css": "./static/css/2.1a02f21c.chunk.css",
+    "static/js/2.59ba81c9.chunk.js": "./static/js/2.59ba81c9.chunk.js",
+    "static/js/2.59ba81c9.chunk.js.map": "./static/js/2.59ba81c9.chunk.js.map",
+    "static/js/3.d3a6626a.chunk.js": "./static/js/3.d3a6626a.chunk.js",
+    "static/js/3.d3a6626a.chunk.js.map": "./static/js/3.d3a6626a.chunk.js.map",
+    "index.html": "./index.html",
+    "static/css/2.1a02f21c.chunk.css.map": "./static/css/2.1a02f21c.chunk.css.map",
+    "static/css/main.70a6af22.chunk.css.map": "./static/css/main.70a6af22.chunk.css.map",
+    "static/js/2.59ba81c9.chunk.js.LICENSE.txt": "./static/js/2.59ba81c9.chunk.js.LICENSE.txt",
+    "static/media/parallax.scss": "./static/media/background2.782c664f.jpg",
+    "static/media/bucc.0b2f0fc7.png": "./static/media/bucc.0b2f0fc7.png",
+    "static/media/buccBlack.c8f82c7e.png": "./static/media/buccBlack.c8f82c7e.png",
+    "static/media/buccGrey.26b1c49d.png": "./static/media/buccGrey.26b1c49d.png",
+    "static/media/fire.1fadb5e1.png": "./static/media/fire.1fadb5e1.png",
+    "static/media/redbucc.9e375eee.png": "./static/media/redbucc.9e375eee.png",
+    "static/media/telegramLogo.d41c5828.png": "./static/media/telegramLogo.d41c5828.png",
+    "static/media/twitterLogo.41fa9dc7.png": "./static/media/twitterLogo.41fa9dc7.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.e74e4239.js",
+    "static/css/2.1a02f21c.chunk.css",
+    "static/js/2.59ba81c9.chunk.js",
+    "static/css/main.70a6af22.chunk.css",
+    "static/js/main.fadef719.chunk.js"
+  ]
+}
