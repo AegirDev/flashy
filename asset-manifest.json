@@ -1,33 +1,30 @@
 {
   "files": {
-    "main.css": "./static/css/main.70a6af22.chunk.css",
-    "main.js": "./static/js/main.fadef719.chunk.js",
-    "main.js.map": "./static/js/main.fadef719.chunk.js.map",
-    "runtime-main.js": "./static/js/runtime-main.e74e4239.js",
-    "runtime-main.js.map": "./static/js/runtime-main.e74e4239.js.map",
+    "main.css": "./static/css/main.fa88eb92.chunk.css",
+    "main.js": "./static/js/main.1182c3a1.chunk.js",
+    "main.js.map": "./static/js/main.1182c3a1.chunk.js.map",
+    "runtime-main.js": "./static/js/runtime-main.377320bb.js",
+    "runtime-main.js.map": "./static/js/runtime-main.377320bb.js.map",
     "static/css/2.1a02f21c.chunk.css": "./static/css/2.1a02f21c.chunk.css",
-    "static/js/2.59ba81c9.chunk.js": "./static/js/2.59ba81c9.chunk.js",
-    "static/js/2.59ba81c9.chunk.js.map": "./static/js/2.59ba81c9.chunk.js.map",
-    "static/js/3.d3a6626a.chunk.js": "./static/js/3.d3a6626a.chunk.js",
-    "static/js/3.d3a6626a.chunk.js.map": "./static/js/3.d3a6626a.chunk.js.map",
+    "static/js/2.b4e1ec5b.chunk.js": "./static/js/2.b4e1ec5b.chunk.js",
+    "static/js/2.b4e1ec5b.chunk.js.map": "./static/js/2.b4e1ec5b.chunk.js.map",
+    "static/js/3.55d46faf.chunk.js": "./static/js/3.55d46faf.chunk.js",
+    "static/js/3.55d46faf.chunk.js.map": "./static/js/3.55d46faf.chunk.js.map",
     "index.html": "./index.html",
     "static/css/2.1a02f21c.chunk.css.map": "./static/css/2.1a02f21c.chunk.css.map",
-    "static/css/main.70a6af22.chunk.css.map": "./static/css/main.70a6af22.chunk.css.map",
-    "static/js/2.59ba81c9.chunk.js.LICENSE.txt": "./static/js/2.59ba81c9.chunk.js.LICENSE.txt",
-    "static/media/parallax.scss": "./static/media/background2.782c664f.jpg",
-    "static/media/bucc.0b2f0fc7.png": "./static/media/bucc.0b2f0fc7.png",
-    "static/media/buccBlack.c8f82c7e.png": "./static/media/buccBlack.c8f82c7e.png",
-    "static/media/buccGrey.26b1c49d.png": "./static/media/buccGrey.26b1c49d.png",
-    "static/media/fire.1fadb5e1.png": "./static/media/fire.1fadb5e1.png",
-    "static/media/redbucc.9e375eee.png": "./static/media/redbucc.9e375eee.png",
-    "static/media/telegramLogo.d41c5828.png": "./static/media/telegramLogo.d41c5828.png",
-    "static/media/twitterLogo.41fa9dc7.png": "./static/media/twitterLogo.41fa9dc7.png"
+    "static/css/main.fa88eb92.chunk.css.map": "./static/css/main.fa88eb92.chunk.css.map",
+    "static/js/2.b4e1ec5b.chunk.js.LICENSE.txt": "./static/js/2.b4e1ec5b.chunk.js.LICENSE.txt",
+    "static/media/parallax.scss": "./static/media/background4.523f3d6e.jpg",
+    "static/media/buccGold.c2d6ff25.png": "./static/media/buccGold.c2d6ff25.png",
+    "static/media/buccGreen.275061e9.png": "./static/media/buccGreen.275061e9.png",
+    "static/media/buccGrey.31a41624.png": "./static/media/buccGrey.31a41624.png",
+    "static/media/buccRed.56c20dc9.png": "./static/media/buccRed.56c20dc9.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.e74e4239.js",
+    "static/js/runtime-main.377320bb.js",
     "static/css/2.1a02f21c.chunk.css",
-    "static/js/2.59ba81c9.chunk.js",
-    "static/css/main.70a6af22.chunk.css",
-    "static/js/main.fadef719.chunk.js"
+    "static/js/2.b4e1ec5b.chunk.js",
+    "static/css/main.fa88eb92.chunk.css",
+    "static/js/main.1182c3a1.chunk.js"
   ]
 }
