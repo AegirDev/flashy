@@ -1,0 +1,23 @@
+.shiftleftright {
+	animation: horizontalMovement 60s ease infinite;
+}
+
+
+@keyframes horizontalMovement {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+	/*Cancel Animations to reduce mobile CPU utilization */
+	@media screen and (max-width: 1024px) {
+	.shiftleftright {
+		animation: none;
+	}
+	}

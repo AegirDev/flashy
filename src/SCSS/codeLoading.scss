@@ -1,0 +1,55 @@
+// Scanline height 1005
+@keyframes scanline {
+	0.01% {
+    height: 0;
+  }
+  99.99% {
+    height: 100%
+  }
+	100% {
+		height: 0;
+	}
+}
+
+.scanline {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	pointer-events: none;
+	z-index: 1;
+}
+
+.scanline1 {
+	animation: scanline 13s linear infinite;
+	background: rgba(255, 29, 21, 0.02);
+}
+
+.scanline2 {
+	animation: scanline 17s linear infinite;
+	background: rgba(144, 169, 183, 0.03);
+}
+
+.scanline3 {
+	animation: scanline 31s linear infinite;
+	background: rgba(145, 145, 233, 0.04);
+}
+
+			/*Cancel Animations to reduce mobile CPU utilization */
+			@media screen and (max-width: 1024px) {
+			.scanline1 {
+				animation: none;
+				background: none;
+				}
+				
+				.scanline2 {
+				animation: none;
+				background: none;
+				}
+				
+				.scanline3 {
+				animation: none;
+				background: none;
+				}
+			}

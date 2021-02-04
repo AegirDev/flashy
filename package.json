@@ -1,6 +1,6 @@
 {
-  "name": "website",
-  "homepage": ".",
+  "name": "buccaneersite",
+  "homepage": "http://.",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -9,12 +9,24 @@
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^12.1.10",
     "bootstrap": "^4.5.3",
+    "coffeescript": "^2.5.1",
+    "compass-mixins": "^0.12.10",
     "emotion-theming": "^11.0.0",
+    "jquery": "^3.5.1",
+    "leapjs": "^1.1.0",
+    "lodash": "^4.17.20",
+    "node-sass": "^4.14.1",
+    "nodemon": "^2.0.7",
+    "prefixfree": "^1.0.0",
     "react": "^17.0.1",
     "react-bootstrap": "^1.4.0",
     "react-dom": "^17.0.1",
     "react-scripts": "4.0.0",
-    "rebass": "^4.0.7",
+    "sass": "^1.32.5",
+    "sass-resources-loader": "^2.1.1",
+    "styled-components": "^5.2.1",
+    "three": "^0.124.0",
+    "tween": "^0.9.0",
     "web-vitals": "^0.2.4"
   },
   "scripts": {
@@ -45,5 +57,19 @@
   },
   "devDependencies": {
     "gh-pages": "^3.1.0"
+  },
+  "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AegirDev/flashy.git"
+  },
+  "keywords": [
+    "bucc"
+  ],
+  "author": "bucc",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AegirDev/flashy/issues"
   }
 }

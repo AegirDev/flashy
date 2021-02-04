@@ -1,0 +1,32 @@
+        /* ALL FONTS COME FROM HERE */
+        @import url('https://fonts.googleapis.com/css2?family=Cantarell&family=Lora&family=PT+Serif&family=Source+Work+Sans:wght@900+Sans+Pro:wght@200&family=Teko:wght@300&display=swap');
+        
+        /* Last edit - 1/22/2021 - Colors, Fonts, Font Sizing & Spacing */
+        :root {
+        /* Colors */
+        --main: #17bebb;
+        --plain: #fbfbff;
+        --ternary: #E9E6FF;
+        --hover: #EBE9E9;
+        --highlight: #3581B8;
+        --redhighlight: #7c1313;
+        --orange: #fccd5f;
+        --orangeLight: #F8E9C8;
+        --grey: #3d4043;
+        --greyLight: #8D9092;
+        /* Fonts */
+        /*--mainFont: ;*/
+        --header: 'Work Sans', sans-serif;
+        --linkFont: 'Lora', serif;
+        --mainFont: 'Source Sans Pro', sans-serif;
+        /*--linkFontHover: */
+        --titleFont: 'Teko', sans-serif;
+        --readingText: 'Cantarell', sans-serif;
+        /* Font Sizing */
+        --buttonFontSizeLarge: 1em;
+        --linkFontSize: 1em;
+        /* Spacing */
+        --miniSpacing: 5vh;
+        /* Sizing */
+        --smallTab: 5vh;
+        }

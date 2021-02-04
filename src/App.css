@@ -1,844 +1,323 @@
-@import url('https://fonts.googleapis.com/css2?family=Syne+Mono&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap" rel="stylesheet');
-
-
-
-/* HEADER & NAVBAR */
-.imageSize {
-        width: 90%;
-}
-
-.shareButtonSpacing {
-  width: 2.5vh;
-  height: 2.5vh;
-  margin-right: .3vh;
-}
-
-.topviewSpace {
-margin-bottom: 5vw;
-}
-
-
-.space {
- margin-top: 30vh !important;
-}
-
-.loaderLight {
-        letter-spacing: .5vh;
-        background: -webkit-linear-gradient(left, #C0C0C0 0%,#D3D3D3 24%,#D3D3D3 36%,#C0C0C0 46%,#C0C0C0 52%,#C0C0C0 58%,#C0C0C0 67%,#000000 100%);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        background-size: 300%;
-        transition: 3s;
-        animation: font-shine 3s infinite linear;
-}
-
-.cardFont {
-font-family: 'Noto Sans', sans-serif;
-text-align: center;
-color: #C0C0C0;
-text-align: center;
-}
-
-.cardTitle {
-letter-spacing: 1vw;
-margin-top: 2vw;
-font-size: 5vw !important;
-background-color: #000000 !important;
-z-index: 50 !important;
-
-}
-
-.cardSubtitle {
-letter-spacing: .2vh;
-font-size: 1.4vw !important;
-}
-
-.adjustCardBody {
-        background-color: #000000 !important;
-}
-
-.lastCard {
-  margin-bottom: 15vw !important;
-}
-
-.buttonFormat {
-        border: none !important;
-        outline:none !important;
-        margin-bottom: 5vw !important;
-}
-
-a:hover {
-        color: green;
-        cursor: pointer;
-}
-
-
-.buttonFormat:hover {
-        color: green;
-        cursor: pointer;
-}
-
-.limitHeightVideo {
-  height: 20vw !important;
-}
-
-.whiteHRLINE {
-  background-color: #C0C0C0 !important;
-  height: .1vh !important;
-}
-
-.VideoCube {
-  margin-top: -3vh;
-  width: 50%;
-}
-
-.VideoCoin {
-  margin-bottom: -3vh;
-  width: 65%;
-}
-
-.mobileAdjustCoin {
-        margin-top: -12vh !important;
-}
-
-.mobileAdjustCube {
-        margin-top: -12vh !important;
-}
-
-.cardFontMain {
-        text-align: center;
-        background: -webkit-linear-gradient(left, #C0C0C0 0%,#e5e5e5 24%,#D3D3D3 36%,#C0C0C0 46%,#C0C0C0 52%,#C0C0C0 58%,#cccccc 67%,#D3D3D3 100%);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        -webkit-font-smoothing: antialiased;
-        -moz-osx-font-smoothing: grayscale;
-}
-
-
-
-  @keyframes font-shine {
-    0% {background-position: 0% 0}
-    100% {background-position: -100% 0}
-  }
-
-/* TEXT RELATED ISSUES */
-.text {
-        color: #C0C0C0 !important;
-        font-family: 'Noto Sans', sans-serif !important;
-      }
-
-
-/* FRONT TEXT DISPLAY */
-
-.loading-text {
-    bottom: 0;
-    left: 0;
-    right: 0;
-    text-align: center;
-    width: 100%;
-    
-}
-    .Headline {
-        font-size: 5vw !important;
-        letter-spacing: .3vw;
-        text-align: center;
-        background: -webkit-linear-gradient(left, #C0C0C0 0%,#D3D3D3 24%,#D3D3D3 36%,#C0C0C0 46%,#C0C0C0 52%,#C0C0C0 58%,#C0C0C0 67%,#000000 100%);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        background-size: 300%;
-        transition: 15s;
-        animation: font-shine 15s infinite linear;
-    }
-
-    .Subtitle {
-        font-size: 1.75vw !important;
-        letter-spacing: .2vw;
-        text-align: center;
-        background: -webkit-linear-gradient(left, #C0C0C0 0%,#D3D3D3 24%,#D3D3D3 36%,#C0C0C0 46%,#C0C0C0 52%,#C0C0C0 58%,#C0C0C0 67%,#000000 100%);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        background-size: 300%;
-        transition: 15s;
-        animation: font-shine 15s infinite linear;
-    }
-
-    .HeadlineAdjustment {
-        margin-top: 10vw !important;
-    }
-
-    .SubtitleAdjustment {
-        margin-top: 5% !important;
-    }
-
-
-  .loading-text span {
-    color: #C0C0C0;
-    font-family: 'Noto Sans', sans-serif;
-  }
-
-
-  @media screen and (min-width: 3500px) and (max-width: 5400px) {
-        .cardSubtitle {
-                font-size: 1.3vw !important;
-        }
-
-        .limitHeightVideo {
-                height: 30vw !important;
-        }
-
-        .imageSize {
-                height: 20vw;
-                width: 20vw;
-                margin-top: 5vw;
-        }
-
-        .VideoCube {
-                width: 80%;
-                margin-top: -5vw;
-        }
-
-        .VideoCoin {
-                margin-bottom: -6vw !important;
-                width: 100%;
-        }
-
-        .VideoTriangles {
-                width: 70%;
-                margin-top: -3vw;
-        }        
-}
-
-@media screen and (min-width: 3001px) and (max-width: 3499px) {
-        .cardSubtitle {
-                font-size: 1.8vw !important;
-        }
-
-        .limitHeightVideo {
-                height: 30vw !important;
-        }
-
-        .imageSize {
-                height: 20vw;
-                width: 20vw;
-                margin-top: 5vw;
-        }
-
-        .VideoCube {
-                width: 80%;
-                margin-top: -5vw;
-        }
-
-        .VideoCoin {
-                margin-bottom: -4vw !important;
-                width: 100%;
-        }
-
-        .VideoTriangles {
-                width: 70%;
-                margin-top: -3vw;
-        }           
-}
-
-  @media screen and (min-width: 2601px) and (max-width: 3000px) {
-
-        .cardSubtitle {
-                font-size: 1.8vw !important;
-        }
-
-        .limitHeightVideo {
-                height: 30vw !important;
-        }
-
-        .imageSize {
-                height: 20vw;
-                width: 20vw;
-                margin-top: 5vw;
-        }
-
-        .VideoCube {
-                width: 80%;
-                margin-top: -5vw;
-        }
-
-        .VideoCoin {
-                margin-bottom: -4vw !important;
-                width: 100%;
-        }
-
-        .VideoTriangles {
-                width: 70%;
-                margin-top: -3vw;
-        }              
-}
-
-  @media screen and (min-width: 2301px) and (max-width: 2600px) {
-        .limitHeightVideo {
-                height: 30vw !important;
-        }
-
-        .imageSize {
-                height: 20vw;
-                width: 20vw;
-                margin-top: 5vw;
-        }
-
-        .VideoCube {
-                width: 80%;
-                margin-top: -5vw;
-        }
-
-        .VideoCoin {
-                margin-bottom: -4vw !important;
-                width: 100%;
-        }
-
-        .VideoTriangles {
-                width: 70%;
-                margin-top: -3vw;
-        }        
-}
-
-  @media screen and (min-width: 1801px) and (max-width: 2300px) {
-        .limitHeightVideo {
-                height: 20vw !important;
-        }
-
-        .VideoCube {
-                margin-top: -6vw;
-                width: 60%;
-                margin-bottom: 6vw;
-                margin-left: -2vw;
-        }
-
-        .VideoCoin {
-                margin-bottom: -8vw !important;
-                width: 70%;
-                margin-left: -1vw !important;
-        }
-
-        .VideoTriangles {
-                margin-bottom: -8vw !important;
-                width: 50%;
-                margin-top: -4vw !important;
-        }
-}
-
-  @media screen and (min-width: 1501px) and (max-width: 1800px) {
-        .cardSubtitle {
-                font-size: 2vw !important;
-        }
-
-        .limitHeightVideo {
-                height: 30vw !important;
-        }
-
-        .VideoCube {
-                margin-top: -6vw;
-                width: 90%;
-                margin-bottom: 6vw;
-                margin-left: -2vw;
-        }
-
-        .VideoCoin {
-                margin-bottom: -8vw !important;
-                width: 110%;
-                margin-left: -1vw !important;
-        }
-
-        .VideoTriangles {
-                margin-bottom: -8vw !important;
-                width: 80%;
-                margin-top: -4vw !important;
-        }
-
-              
-}
-
-@media screen and (min-width: 1368px) and (max-width: 1500px) {
-        .Headline {
-                font-size: 5vw !important;
-                margin-top: 1vw !important;
+        /* Last edit - 1/22/2021 - Font Imports */
+        @import url('./CSS/root.css');
+
+        /*
+        *, *:after, *:before {
+        box-sizing: border-box;
         }
         
-            .Subtitle {
-                font-size: 2vw !important;
-                margin-top: .3vw !important;
-                margin-left: 3vw !important;
+        html {
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
         }
-
-        .paragraphBody {
-                font-size: 2vw !important;
-        }
-
-        .cardSubtitle {
-                font-size: 3vw !important;
-        }
-
-        .mobileAdjustCube {
-        margin-top: -6vh !important;
-        }
-
-        .limitHeightVideo {
-                height: 27vw !important;
-        }
-
-        .VideoCube {
-                margin-top: -6vw;
-                width: 80%;
-                margin-bottom: 6vw;
-                margin-left: -2vw;
-        }
-
-        .VideoCoin {
-                margin-bottom: -8vw !important;
-                width: 90%;
-                margin-left: -1vw !important;
-        }
-
-        .VideoTriangles {
-                margin-bottom: -8vw !important;
-                width: 70%;
-                margin-top: -4vw !important;
-        }
-
-        .mobileAdjustCoin {
-                margin-top: -4vw !important;
-        }
-
-        .whiteHRLINE {
-                background-color: #C0C0C0 !important;
-                height: .1vh !important;
-                margin-bottom: 3vh;
-        }
-              
-}
-
-
-  @media screen and (min-width: 760px) and (max-width: 1367px) {
-        .Headline {
-                font-size: 5vw !important;
-                margin-top: 1vw !important;
+        */
+        .linkMostFront {
+        z-index: 1000 !important;
         }
         
-            .Subtitle {
-                font-size: 3vw !important;
-                margin-top: .5vw !important;
-                margin-left: 3vw !important;
+        /* Last edit - 1/23/2021 - Spacing */
+        .tabSpace {
+        margin-top: 10vh;
+        margin-bottom: 10vh;
         }
 
-
-        .paragraphBody {
-                font-size: 2vw !important;
-        }
-
-        .cardSubtitle {
-                font-size: 3vw !important;
-        }
-
-        .mobileAdjustCube {
-        margin-top: -6vh !important;
-        }
-
-        .HeadlineAdjustment {
-                margin-top: 8vw !important;
-        }
-
-        .limitHeightVideo {
-                height: 38vw !important;
-        }
-
-        .VideoCube {
-                margin-top: -4vw;
-                width: 100%;
-                margin-left: 0vw;
-        }
-
-        .VideoCoin {
-                margin-bottom: -8vw !important;
-                width: 130%;
-                margin-left: -7vw !important;
-        }
-
-        .VideoTriangles {
-                margin-bottom: -8vh !important;
-                width: 90%;
-                margin-top: -4vh !important;
-        }
-
-        .mobileAdjustCoin {
-                margin-top: -4vh !important;
-        }
-
-}
-
-@media screen and (min-width: 541px) and (max-width: 759px) {
-
-        .Headline {
-                font-size: 5vw !important;
-                margin-top: 1vw !important;
-        }
-        
-            .Subtitle {
-                font-size: 3vw !important;
-                margin-top: .5vw !important;
-        }
-
-
-        .paragraphBody {
-                font-size: 3vw !important;
-        }
-
-        .cardSubtitle {
-                font-size: 4vw !important;
-        }
-
-        .cardTitle {
-                font-size: 6vw !important;
-        }
-
-        .mobileAdjustCube {
-                margin-top: 0vh !important;
-        }
-
-        .imageSize {
-                height: 35vw;
-                width: 35vw;
-        }
-
-        .headlineFont {
-                letter-spacing: .5vh;
-                font-size: 1.75vh !important;
-        }
-
-        .limitHeightVideo {
-                height: 45vw !important;
-        }
-
-        .VideoCube {
-                width: 60%;
-                margin-top: -5vh !important;
-        }
-
-        .VideoCoin {
-                width: 75%;
-                margin-left: 0vh !important;
-        }
-
-        .VideoTriangles {
-                width: 50%;
-                margin-top: -5vh !important;
-                margin-bottom: -10vh !important;
-        }
-
-        .mobileAdjustCoin {
-                margin-top: -4vh !important;
-        }
-
-}
-
-@media screen and (min-width: 500px) and (max-width: 540px) {
-        .paragraphBody {
-                font-size: 3vw !important;
-        }
-
-        .cardSubtitle {
-                font-size: 4vw !important;
-        }
-
-        .shareButtonSpacing {
-                margin-top: 30vw !important;
-                margin-right: 5vw !important;
-        }
-
-        .mobileAdjustCube {
-                margin-top: 0vh !important;
-        }
-
-        .imageSize {
-                height: 35vw;
-                width: 35vw;
-        }
-
-        .Headline {
-                font-size: 8vw !important;
-                margin-top: 2vw !important;
-        }
-        
-            .Subtitle {
-                font-size: 5vw !important;
-                margin-top: 3vw !important;
-        }
-
-
-        .headlineFont {
-                letter-spacing: .5vh;
-                font-size: 1.75vh !important;
-        }
-
-        .limitHeightVideo {
-                height: 40vw !important;
-        }
-
-        .VideoCube {
-                margin-top: -7vh;
-                width: 55%;
-        }
-
-        .VideoCoin {
-                width: 60%;
-                margin-left: 0vh !important;
-        }
-
-        .VideoTriangles {
-                width: 45%;
-                margin-top: -10vh !important;
-                margin-bottom: -10vh !important;
-        }
-
-        .mobileAdjustCoin {
-                margin-top: -4vh !important;
-        }
-}
-
-@media screen and (min-width: 381px) and (max-width: 480px) {
-        .paragraphBody {
-                font-size: 3vw !important;
-        }
-
-        .cardSubtitle {
-                font-size: 4vw !important;
-        }
-
-        .shareButtonSpacing {
-                margin-top: 30vw !important;
-                margin-right: 5vw !important;
-        }
-
-        .mobileAdjustCube {
-                margin-top: 0vw !important;
-        }
-
-        .Headline {
-                font-size: 8vw !important;
-                margin-top: 2vw !important;
-        }
-        
-            .Subtitle {
-                font-size: 4vw !important;
-                margin-top: 3vw !important;
-        }
-
-
-        .imageSize {
-                height: 35vw;
-                width: 35vw;
-        }
-
-        .headlineFont {
-                letter-spacing: .5vw;
-                font-size: 1.75vw !important;
-        }
-
-        .limitHeightVideo {
-                height: 45vw !important;
-        }
-
-        .VideoCube {
-                margin-top: -7vw;
-                width: 60%;
-        }
-
-        .VideoCoin {
-                width: 70%;
-                margin-left: 0vw !important;
-                margin-top: -2vw;
-        }
-
-        .VideoTriangles {
-                width: 50%;
-                margin-top: -10vw !important;
-                margin-bottom: -10vw !important;
-        }
-
-        .mobileAdjustCoin {
-                margin-top: -4vw !important;
-        }
-}
-
-@media screen and (min-width: 370px) and (max-width: 380px) {
-        .Headline {
-                font-size: 8vw !important;
-                margin-top: 2vw !important;
-        }
-        
-            .Subtitle {
-                font-size: 4vw !important;
-                margin-top: 3vw !important;
-        }
-
-        .shareButtonSpacing {
-                margin-top: 45vw !important;
-                margin-right: 5vw !important;
-        }
-
-        .paragraphBody {
-                font-size: 2.5vw !important;
-        }
-
-        .cardSubtitle {
-                font-size: 3vw !important;
-        }
-
-        .mobileAdjustCube {
-                margin-top: 0vw !important;
-        }
-        
-        .imageSize {
-                height: 35vw;
-                width: 35vw;
-        }
-
-        .limitHeightVideo {
-                height: 30vw !important;
-        }
-
-        .VideoCube {
-                margin-top: -8vw !important;
-                width: 45%;
-        }
-
-        .VideoCoin {
-                width: 50%;
-                margin-left: -3vw !important;
-        }
-
-        .VideoTriangles {
-                width: 35%;
-                margin-top: -5vw !important;
-        }
-
-        .mobileAdjustCoin {
-                margin-top: 0vw !important;
-        }
-}
-
-@media screen and (min-width: 310px) and (max-width: 369px) {
-        .shareButtonSpacing {
-                margin-top: 40vw !important;
-                margin-right: 5vw !important;
-        }
-
-
-        .paragraphBody {
-                font-size: 2.5vw !important;
-        }
-
-        .cardSubtitle {
-                font-size: 3vw !important;
-        }
-
-        .Headline {
-                font-size: 8vw !important;
-                margin-top: 2vw !important;
-        }
-        
-            .Subtitle {
-                font-size: 4vw !important;
-                margin-top: 3vw !important;
-        }
-
-
-        .mobileAdjustCube {
-                margin-top: 0vw !important;
-        }
-        
-        .imageSize {
-                height: 25vw;
-                width: 25vw;
-        }
-
-        .limitHeightVideo {
-                height: 30vw !important;
-        }
-
-        .VideoCube {
-                margin-top: -2vw !important;
-                width: 35%;
-        }
-
-        .VideoCoin {
-                width: 45%;
-                margin-left: -1vw !important;
-        }
-
-        .VideoTriangles {
-                width: 35%;
-                margin-top: -3vw !important;
-        }
-
-        .mobileAdjustCoin {
-                margin-top: -2vw !important;
-        }
-
-        .headlineFont {
-                font-size: 3vw !important;
+        /* Last edit - 1/22/2021 - General Display Settings */
+        .buccfrontpageLogo {
+        width: 25vw;
+        margin-top: -3%;
+        margin-bottom: 3%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        z-index: 10000;
         }
-}
 
-@media screen and (min-width: 260px) and (max-width: 309px) {
-        .shareButtonSpacing {
-                margin-top: 100vw !important;
-                margin-right: 5vw !important;
-                width: 5vw;
-                height: 5vw;
+        .navbarLogo {
+        width: 2em;
+        margin-right: 1%;
+        margin-left: 3%;
+        }
+
+        .buttonLogo {
+        width: 1em;
+        margin-top: 3%;
+        }
+
+        .buttonButtonLogo {
+        width: 25%;
+        margin-top: 3%;
+        z-index: 100;
+        }
+
+        .navbarDesign {
+        position: fixed !important;
+        display: inline-block !important;
+        z-index: 1000 !important;
+        height: 20vh !important;
+        width: 100% !important;
+        margin-bottom: -20vh !important;
+        top: 0 !important;
+        border: 3px solid #17bebb !important;
+        opacity: .6 !important;
         }
+
+        .navbarDesign:hover {
+        opacity: 1 !important;
+        border: 0px !important;
+        }
 
-        .paragraphBody {
-                font-size: 3vw !important;
+        .navbarItem {
+        color: var(--plain);
+        font-size: var(--linkFontSize);
+        text-decoration: none;
+        display: inline-block;
+        position: relative;
+        font-family: var(--mainFont);
+        z-index: 100 !important;
+        }
+
+        .navbarItem:hover {
+        color: var(--plain);
+        }
+
+        .navbarItem:after {
+        content: '';
+        color: var(--main) !important;
+        position: absolute;
+        left: 0;
+        display: inline-block;
+        height: 1em;
+        width: 100%;
+        border-bottom: 1px solid;
+        margin-top: 10px;
+        opacity: 0;
+        -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+        transition: opacity 0.35s, transform 0.35s;
+        -webkit-transform: scale(0,1);
+        transform: scale(0,1);
+        }
+
+        .navbarItem:hover:after {
+        color: var(--hover) !important;
+        opacity: 1;
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        }
+
+        .navbarText:hover {
+        font-style: italic !important;
+        }
+
+        /* Last edit - 1/22/2021 -
+         HEADER & NAVBAR */
+        .navbarDesign {
+        box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24) !important;
+        transition: all 0.3s cubic-bezier(.25,.8,.25,1) !important;
+        height: var(--smallTab) !important;
+        }
+
+        .navbarDesign:hover {
+        box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22) !important;
+        }
+
+        .navbarDesign { 
+        display: inline-block;
+        z-index: 0 !important;
+        margin: 0;
+        text-transform: uppercase;
+        background: var(--main) !important;
+        }
+
+        .navbarDesign:after {
+        height: 3vw !important;
+        content: '';
+        position: absolute;
+        left: 0;
+        display: inline-block;
+        width: 100%;
+        border-bottom: .7vh solid;
+        color: var(--hover);
+        opacity: 0;
+        -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+        transition: opacity 0.35s, transform 0.35s;
+        -webkit-transform: scale(0,1);
+        transform: scale(0,1);
+        }
+
+        .navbarDesign:hover:after {
+        opacity: 1;
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        }
+
+        .downArrow {
+        width: 2vw;
+        z-index: 100;
+        position: fixed;
+        margin-bottom: -5% !important;
+        margin-left: -1% !important;
+        }
+
+        .upArrow {
+        width: 2vw;
+        z-index: 100;
+        position: fixed;
+        margin-top: -5% !important;
+        }
+
+        /* Last edit - 1/22/2021 -
+         TITLES */
+        .mainTitle {
+        color: var(--ternary);
+        font-size: 3em;
+        font-family: var(--header);
+        font-weight: 900;
+        text-transform: uppercase;
+        text-shadow: 0 1px 0 #c9cfce,0 2px 0 #bcc2c2,0 3px 0 #afb6b6,0 4px 0 #a4adac,0 5px 0 #9fa8a7,0 6px 0 #99a3a2,0 7px 0 #97a1a0,0 8px 0 #949e9d,0 0 5px rgba(0,0,0,.05),0 1px 3px rgba(0,0,0,.2),0 3px 5px rgba(0,0,0,.2),0 5px 10px rgba(0,0,0,.2),0 10px 10px rgba(0,0,0,.2),0 20px 20px rgba(0,0,0,.3);
+        letter-spacing: 3px;
+        opacity: 1;
         }
 
-        .cardSubtitle {
-                font-size: 4vw !important;
-        }
-
-        .imageSize {
-                height: 35vw;
-                width: 35vw;
-        }
-
-        .Headline {
-                font-size: 5vw !important;
-                margin-top: 2vw !important;
-        }
-        
         .Subtitle {
-                font-size: 4vw !important;
-                margin-top: 3vw !important;
+        font-size: 2em;
+        font-family: var(--titleFont);
+        background: 
+        -webkit-linear-gradient(
+        left, 
+        var(--main) 0%,
+        var(--ternary) 24%, 
+        var(--main) 36%,
+        var(--ternary) 46%,
+        var(--main) 52%,
+        var(--ternary) 58%,
+        var(--main) 67%,
+        var(--ternary) 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-size: 300%;
+        animation: font-shine 20s infinite linear;
+        opacity: .6;
         }
 
-        .limitHeightVideo {
-                height: 30vw !important;
+        .Subtitle:hover {
+        opacity: 1;
         }
 
-        .VideoCube {
-                margin-top: -3vw;
-                width: 35%;
+        @keyframes font-shine {
+        0% {background-position: 0% 0}
+        100% {background-position: -100% 0}
         }
 
-        .VideoCoin {
+        .parallaxTitlePane {
+        z-index: 1000 !important;
+        color: #D00000 !important;
+        }
+
+        /* SECOND TAB - Last edited 1/26/2021 */ 
+        #animationInput {
+        margin-left: -10vw !important;
+        margin-top: -10vw !important;
+        z-index: -1;
+        }
+
+        .tabimageSize {
+        width: 120%;
+        margin-bottom: 10%;
+        margin-left: -10%;
+        }
+
+        /* VIEWPORT OPTIMIZATIONS -- 
+        LAST EDITED 2/2/2021 */
+        /*Cancel animations on mobile*/
+ 
+        /* Samsung Galaxy S5 up to Iphone X */
+        @media screen and (max-width: 1024px) {
+                .Subtitle {
+                        visibility: hidden;
+                }
+
+                #dice {
+                visibility: hidden;
+                }
+
+                .navbarLogo {
+                visibility: hidden;
+                margin-left: -5vw;
+                }
+
+                .navbarDesign {
+                height: 25vw !important;
+                }
+
+                .navbarItem {
+                font-size: .2em;
+                }
+
+                .buccfrontpageLogo {
+                width: 60vw;
+                margin-bottom: 5vw;
+                }
+
+                .mainTitle {
+                font-size: 1.5em !important;
+                font-weight: 700;
+                text-shadow: 0 1px 0 #c9cfce,0 1px 0 #bcc2c2,0 1.5px 0 #afb6b6,0 2px 0 #a4adac,0 2.5px 0 #9fa8a7,0 4px 0 #99a3a2,0 3.5px 0 #97a1a0,0 4px 0 #949e9d,0 0 2.5px rgba(0,0,0,.05),0 1px 1.5px rgba(0,0,0,.2),0 1.5px 2.5px rgba(0,0,0,.2),0 2.5px 5px rgba(0,0,0,.2),0 5px 5px rgba(0,0,0,.2),0 10px 10px rgba(0,0,0,.3);
+                letter-spacing: 2px;
+                margin-top: 10vw;
+                }
+
+                .Subtitle {
+                margin-bottom: 10vw;
+                margin-left: 0vw;
+                margin-top: 5vw;
+                }
+
+                .mainMenuDownArrow {
+                margin-top: 5vw !important;
+                margin-left: -4vw !important;
+                }
+
+                .downArrow {
+                width: 8vw;
+                }
+
+                .upArrow {
+                width: 8vw;
+                }
+
+                .paneUpArrow {
+                margin-top: -25% !important;
+                margin-left: -3.5vw !important;
+                }
+
+                .paneArrowDown {
+                margin-top: 5% !important;
+                margin-left: -3.5vw !important;
+                }
+
+                .tabimageSize {
                 width: 50%;
+                margin-top: -5%;
+                margin-bottom: 0%;
+                margin-left: 0%;
+                }
+
+                h1 {
+                font-size: 3em !important;
+                }
+
+                .contentSubtitleItalic {
+                font-size: 2em !important;
+                }
+
+                #animationInput {
                 margin-left: 0vw !important;
-        }
+                margin-top: -35vw !important;
+                }
 
-        .VideoTriangles {
-                width: 30%;
-        }
 
-        .mobileAdjustCoin {
-                margin-top: -6vw !important;
-        }
-}
+        }      
 
 a {
         text-decoration: none !important;

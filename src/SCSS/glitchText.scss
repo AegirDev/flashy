@@ -1,0 +1,140 @@
+@import url('../CSS/root.css');
+
+@mixin glitchCopy2 { 
+		content: attr(data-text);
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+}
+
+.glitch {
+	position: relative;
+	color: white;
+	font-family: var(--mainFont) !important;
+	font-size: 4em;
+	font-weight: 700;
+}
+
+.glitchRed {
+	&::before{
+		@include glitchCopy2;
+		left: 2px;
+		text-shadow: -2px 0 #7c1313;
+		clip: rect(44px, 450px, 56px, 0);
+		animation: glitch-anim2 20s infinite linear alternate-reverse;
+	}
+	
+	&::after {
+		@include glitchCopy2;
+		left: -2px;
+		text-shadow: -2px 0 #fbfbff, 2px 2px #7c1313;
+		animation: glitch-anim3 4s infinite linear alternate-reverse;
+	}
+}
+
+.glitchYellow {
+	&::before{
+		@include glitchCopy2;
+		left: 2px;
+		text-shadow: -2px 0 #fccd5f;
+		clip: rect(44px, 450px, 56px, 0);
+		animation: glitch-anim2 20s infinite linear alternate-reverse;
+	}
+	
+	&::after {
+		@include glitchCopy2;
+		left: -2px;
+		text-shadow: -2px 0 #fbfbff, 2px 2px #fccd5f;
+		animation: glitch-anim3 4s infinite linear alternate-reverse;
+	}
+}
+
+.glitchGrey {
+	&::before{
+		@include glitchCopy2;
+		left: 2px;
+		text-shadow: -2px 0 #3d4043;
+		clip: rect(44px, 450px, 56px, 0);
+		animation: glitch-anim2 20s infinite linear alternate-reverse;
+	}
+	
+	&::after {
+		@include glitchCopy2;
+		left: -2px;
+		text-shadow: -2px 0 #fbfbff, 2px 2px #3d4043;
+		animation: glitch-anim3 4s infinite linear alternate-reverse;
+	}
+}
+
+@keyframes glitch-anim2 {
+  $steps: 20;
+  @for $i from 0 through $steps {
+    #{percentage($i*(1/$steps))} {
+      clip: rect(random(100)+px, 9999px, random(100)+px, 0);
+			transform: skew((random(100) / 100) + deg);
+    }
+  }
+}
+
+@keyframes glitch-anim3 {
+  $steps: 20;
+  @for $i from 0 through $steps {
+    #{percentage($i*(1/$steps))} {
+      clip: rect(random(100)+px, 9999px, random(100)+px, 0);
+			transform: skew((random(100) / 100) + deg);
+    }
+  }
+}
+
+// Does the same deal as before, but now only skews. Used for main text.
+@keyframes glitch-skew2 {
+  $steps: 10;
+  @for $i from 0 through $steps {
+    #{percentage($i*(1/$steps))} {
+      transform: skew((random(10) - 5) + deg);
+    }
+  }
+}
+
+			@media screen and (max-width: 1024px) {
+				.glitchRed {
+					&::before{
+						content: none;
+						text-shadow: none;
+						animation: none;
+					}
+					
+					&::after {
+						text-shadow: none;
+						animation: none;
+					}
+				}
+				
+				.glitchYellow {
+					&::before{
+						content: none;
+						text-shadow: none;
+						animation: none;
+					}
+					
+					&::after {
+						text-shadow: none;
+						animation: none;
+					}
+				}
+				
+				.glitchGrey {
+					&::before{
+						content: none;
+						text-shadow: none;
+						animation: none;
+					}
+					
+					&::after {
+						text-shadow: none;
+						animation: none;
+					}
+				}
+			}

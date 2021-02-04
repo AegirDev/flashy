@@ -1,0 +1,129 @@
+      @import url('../CSS/root.css');
+
+      // ------------- MIXINS ------------- //
+      @mixin transition($time, $property: all, $easing: ease-in) {
+          transition: $property $time $easing;
+      }
+
+      // ------------- VARIABLES ------------- //
+      $parallax-offset: 20vh;
+      $content-offset: 40vh;
+      $transition-speed: 1.2s;
+      $slide-number: 4;
+      $specified-height: 100vh + $parallax-offset;
+
+
+
+      .background {
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        overflow: hidden;
+        will-change: transform;
+        backface-visibility: hidden;
+        height: $specified-height;
+        position: fixed;
+        width: 100%;
+        transform: translateY($parallax-offset);
+        @include transition($transition-speed, all, cubic-bezier(0.22, 0.44, 0, 1));
+        &:before {
+          content: "";
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          top: 0;
+          right: 0;
+          bottom: 0;
+          background-color: rgba(0,0,0,.4);
+        }
+        &:first-child {
+          background-image: url('../Backgrounds/background1.jpg');
+          transform: translateY(-$parallax-offset / 2);
+          .content-wrapper {
+            transform: translateY($parallax-offset /2);
+          }
+        }
+        &:nth-child(2) {
+          background-image: url('../Backgrounds/background2.jpg');
+        }
+        &:nth-child(3) {
+          background-image: url('../Backgrounds/background3.jpg');
+        }
+        &:nth-child(4) {
+          background-image: url('../Backgrounds/background4.jpg');
+        }
+      }
+
+      /* Set stacking context of slides */
+      @for $i from 1 to ($slide-number + 1) {
+          .background:nth-child(#{$i}) {
+              z-index: ($slide-number + 1) - $i; 
+          }
+      }
+
+      .content-subtitle {
+        font-family: var(--readingText);
+        font-weight: 700;
+      }
+
+      .content {
+        &-wrapper {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        //Change the column orientation per parallax slide
+        flex-flow: column wrap;
+        color: #fff;
+        transform: translateY($content-offset);
+        will-change: transform;
+        backface-visibility: hidden;
+        @include transition($transition-speed + .5, all, cubic-bezier(0.22, 0.44, 0, 1));
+        }
+        &-title {
+          font-size: 12vh;
+          line-height: 1.4;
+          text-transform: uppercase;
+        }
+        &-secondaryTitle {
+          font-size: 8vh;
+          line-height: 1.4;
+          text-transform: uppercase;
+        }
+      }
+
+      // ------------- SET TRANSFORM VALUES ------------- //
+
+      .background.up-scroll {
+        transform: translate3d(0,-$parallax-offset / 2,0);
+        .content-wrapper {
+          transform: translateY($parallax-offset / 2);
+        }
+        + .background {
+          transform: translate3d(0,$parallax-offset,0);
+            .content-wrapper {
+              transform: translateY($parallax-offset);
+            }
+          }
+      }
+
+      .background.down-scroll {
+        transform: translate3d(0, -(100vh + $parallax-offset),0);
+        .content-wrapper {
+          transform: translateY($content-offset);
+        }
+        + .background:not(.down-scroll) {
+          transform: translate3d(0,-$parallax-offset / 2,0);
+            .content-wrapper {
+              transform: translateY($parallax-offset / 2);
+            }
+        }
+      }
+      /* Reduce font size on mobile */
+      @media screen and (max-width: 1024px) {
+      .content-subtitle {
+        font-size: 1em !important;
+        font-weight: 300;
+      }
+
+    }
