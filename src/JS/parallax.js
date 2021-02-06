@@ -8,7 +8,6 @@ var isIe = (/MSIE/i.test(navigator.userAgent)) || (/Trident.*rv\:11\./i.test(nav
 var scrollSensitivitySetting = 40; //Increase/decrease this number to change sensitivity to trackpad gestures (up = less sensitive; down = more sensitive) 
 var slideDurationSetting = 600; //Amount of time for which slide is "locked"
 export var currentSlideNumber = 0;
-console.log(currentSlideNumber);
 /*
 function scrollDown(currentSlide) {
   var currentSlide = currentSlide += 1;

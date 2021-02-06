@@ -1,6 +1,6 @@
 //React Imports
 import React, {Component, Suspense} from "react";
-import $ from 'jquery';
+
 //CSS
 //import './main.scss';
 import './App.css';
@@ -25,7 +25,6 @@ import './SCSS/codeLoading.scss';
 //JS
 import {triggerScrollDown, triggerScrollUp} from './JS/parallax.js';
 import './JS/animation_isomorphic.js';
-import './JS/Clock.js';
 
 //ICONS
 import downarrow from './Icons/downarrow.png';
@@ -39,8 +38,6 @@ import buccGrey from './Logos/buccGrey.png';
 
 /* BOOTSTRAP IMPORTS */
 //Elements
-import Navbar from 'react-bootstrap/Navbar';
-import Nav from 'react-bootstrap/Nav';
 //Layouts
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
