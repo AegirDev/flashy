@@ -163,7 +163,12 @@
         width: 2vw;
         z-index: 100;
         position: fixed;
-        margin-top: -5% !important;
+        margin-top: -5%;
+        }
+
+        .lastArrow {
+        margin-top: 1% !important;
+        margin-bottom: -1% !important;
         }
 
         /* Last edit - 1/22/2021 -
